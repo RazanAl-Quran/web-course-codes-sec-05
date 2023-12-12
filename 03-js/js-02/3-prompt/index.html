@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="evenOdd()">Click me</button>
+    <p id="evenOddNumber"></p>
+    <script>
+       function evenOdd() {
+        let num1 = parseInt(prompt('enter your number to check even/odd'));
+        console.log(num1);
+        console.log(typeof(num1));
+
+        if(num1%2 == 0) {
+            document.getElementById('evenOddNumber').innerHTML = 'even';
+        } else {
+            document.getElementById('evenOddNumber').innerHTML = 'odd';
+        }
+
+        // == data
+        // === data+type
+        if('7'===7) {
+            console.log('x equals 7');
+        } else {
+            console.log('x does not equal 7');
+        }
+
+       }
+    </script>
+</body>
+</html>
